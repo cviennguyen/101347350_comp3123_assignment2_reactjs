@@ -23,7 +23,6 @@ const SignUp = () => {
       e.preventDefault();
       const response = await axios.post(SIGNUP_URL, data);
       if (response?.data?.status === true) {
-        localStorage.setItem("token", response?.data?.token);
         alert("Sign Up Successful");
         navigate("/login");
       }

@@ -70,7 +70,7 @@ const Dashboard = () => {
   return (
     <div className="container">
       <h1>Employees</h1>
-      {err && <h3>{err}</h3>}
+      {/* {err && <h3>{err}</h3>} */}
       <Link className="btn btn-primary" to="/add">
         Add Employee
       </Link>
